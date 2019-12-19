@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 
 // source goes here
 const app = () => {
-  console.log('hello from app!');
   const rootEl = document.getElementById('root');
+  const title = 'This is my React test';
   ReactDOM.render(
-    <>
-      <div>This is my React test</div>
-    </>,
+    <div>
+      <div>{ title }</div>
+      <div>
+        Test
+      </div>
+    </div>,
     rootEl
   );
 };
