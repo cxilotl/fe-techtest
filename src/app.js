@@ -1,19 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import MultiplicationGrid from './containers/MultiplicationGrid';
 
 import cssStyles from './app.css';
 
 // source goes here
 const app = () => {
-  const rootEl = document.getElementById('root');
   const title = 'Which? Javascript exercise';
+  const maxNumber = 145;
+  const rootEl = document.getElementById('root');
   ReactDOM.render(
-    <div>
+    <>
       <h1>{ title }</h1>
       <div className={ cssStyles.layout }>
-        Test
+        <MultiplicationGrid highestMultiplierNumber={ maxNumber } />
       </div>
-    </div>,
+    </>,
     rootEl
   );
 };

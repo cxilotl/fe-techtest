@@ -1,0 +1,25 @@
+.layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin: 0;
+
+    font-size: 3rem;
+    color: #ffffff;
+    background: #f9bb4b;
+    border-radius: 10px;
+}
+
+.isSelected {
+    border: solid 3px #f94f15;
+    color: #f94f15;
+}
+
+.isHighlighted {
+    background: #f9580d;
+}

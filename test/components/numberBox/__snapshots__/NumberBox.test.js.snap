@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NumberBox Snapshot - Default button 1`] = `
+<button
+  className="layout"
+  name="num-button-1"
+  type="button"
+  value={1}
+>
+  1
+</button>
+`;
+
+exports[`NumberBox Snapshot - Selected button 1`] = `
+<button
+  className="layout isSelected"
+  name="num-button-1"
+  type="button"
+  value={1}
+>
+  1
+</button>
+`;
