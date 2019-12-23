@@ -1,10 +1,14 @@
 const path = require('path');
 
+const APP_PATHS = {
+  SRC_DIR: path.join(__dirname, 'src')
+};
+
 module.exports =  () => {
 
   return {
     entry: {
-      app: ['./src/index.js']
+      app: [`${APP_PATHS.SRC_DIR}/index.js`]
     },
     output: {
       path: path.resolve(__dirname, 'build'),
@@ -20,6 +24,7 @@ module.exports =  () => {
             {
               loader: 'css-loader',
               options: {
+                importLoaders: 1,
                 modules: true
               }
             }
