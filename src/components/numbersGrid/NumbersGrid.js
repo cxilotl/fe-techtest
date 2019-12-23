@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NumberBox from '../numberBox/NumberBox';
-import cssStyles from './NumbersGrid.css';
-import cssItemStyles from './NumbersGridItem.css';
+import cssStyles from './NumbersGrid.module.css';
+import cssItemStyles from './NumbersGridItem.module.css';
 
 const NumbersGridItem = ({ children }) => {
   return (

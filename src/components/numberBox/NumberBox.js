@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNamesConcat from 'classnames';
-import cssStyles from './NumberBox.css';
+import cssStyles from './NumberBox.module.scss';
 
 const NumberBox = ({ numBoxLabel, onClickFn, isSelected, isHighlighted }) => {
   const name = `num-button-${numBoxLabel}`;

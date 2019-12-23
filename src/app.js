@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MultiplicationGrid from './containers/MultiplicationGrid';
 
-import cssStyles from './app.css';
+import cssStyles from './app.module.css';
 
 // source goes here
 const app = () => {

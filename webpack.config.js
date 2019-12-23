@@ -18,17 +18,38 @@ module.exports =  () => {
     module: {
       rules: [
         {
-          test: /\.css$/,
+          test: /\.module\.(css|scss)$/,
           use: [
             'style-loader',
             {
               loader: 'css-loader',
               options: {
                 importLoaders: 1,
-                modules: true
+                modules: true,
+                sourceMap: true
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
               }
             }
           ],
+        },
+        {
+          test: /\.(css|scss)$/,
+          exclude: /\.module\.(css|scss)$/,
+          use: [
+            'style-loader',
+            'css-loader',
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true
+              }
+            }
+          ]
         },
         {
           test: /\.(js|jsx)$/,
@@ -41,7 +62,7 @@ module.exports =  () => {
       ],
     },
     resolve: {
-      extensions: ['*', '.js', '.jsx']
+      extensions: ['*', '.js', '.jsx', '.scss']
     },
     devtool: 'inline-source-map',
   };
