@@ -8,7 +8,9 @@
     "prettier/react"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    "no-plusplus": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-default-props": 0
   },
   "plugins": ["react", "import", "jsx-a11y"],
   "parser": "babel-eslint",
@@ -18,6 +20,12 @@
     "ecmaFeatures": {
       "jsx": true
     }
+  },
+  "settings": {
+    "import/extensions": [
+      ".js",
+      ".jsx"
+    ]
   },
   "env": {
     "es6": true,
