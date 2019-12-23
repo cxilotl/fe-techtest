@@ -12,10 +12,6 @@ html {
 
 body {
   padding: 0 10px 40px;
-  font-size: 1.4rem; /* 14px */
+  font-size: 1.4rem;
   color: red;
-}
-
-h1 {
-  font-size: 1.8rem; /* 18px */
 }

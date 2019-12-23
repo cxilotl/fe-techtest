@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import NumberBox from '../numberBox/NumberBox';
-import cssStyles from './NumbersGrid.module.css';
-import cssItemStyles from './NumbersGridItem.module.css';
+import cssListStyles from './NumbersGrid.module.scss';
+import cssItemStyles from './NumbersGridItem.module.scss';
 
 const NumbersGridItem = ({ children }) => {
   return (
@@ -47,7 +47,7 @@ const NumbersGrid = ({ maxNumToDisplay, selectedNum, highlightedNumbers, onNumbe
 
   return (
     <>
-      <ol className={ cssStyles.layout }>
+      <ol className={ cssListStyles.layout }>
         { renderNumberList(maxNumToDisplay, selectedNum, highlightedNumbers) }
       </ol>
     </>

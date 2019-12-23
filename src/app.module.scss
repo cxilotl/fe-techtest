@@ -1,0 +1,17 @@
+@import './assets/mixins.scss';
+
+.layout {
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3rem;
+
+    @include desktop {
+        font-size: 4rem;
+    }
+
+    @include desktop {
+        font-size: 5rem;
+    }
+}
